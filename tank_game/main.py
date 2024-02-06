@@ -1,9 +1,14 @@
-from tank import Tank, Tank2
-from maze import Maze
-from wall import Wall
+from game import Game
 
-t_1 = Tank("tank1", 3, 45)
-t_2 = Tank2("tank2", 3, 100)
 
-t_1.move()
+def main():
+    # Create an instance of the Game class
+    game_instance = Game()
 
+    # Start the game
+    game_instance.game_running()
+
+
+# This makes sure that main() is called when the script is executed
+if __name__ == "__main__":
+    main()
